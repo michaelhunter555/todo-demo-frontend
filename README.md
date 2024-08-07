@@ -1,30 +1,61 @@
-# React + TypeScript + Vite
+# Todo TypeScript Demo (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [Description](#description)
+- [Features](#features)
+- [Libraries](#ibraries)
+- [License](#license)
+- [Installation](#installation)
+- [Contact Information](#contact-information)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Frontend of CRUD Todo app built with TypeScript. You can find the [backend](https://github.com/michaelhunter555/todo-demo-backend) here to see how it all comes together.
 
-## Expanding the ESLint configuration
+# Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**Signup**
+**Login**
+**CRUD TODOS**
+**Server-side Pagination (with Backend)**
+**Simple user Dashboard**
+**Chart Displays of complete taks & total tasks**
+**API caching with tanStack Query**
 
-- Configure the top-level `parserOptions` property like this:
+## Libraries
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- @mui/icons-material
+- @mui/x-charts
+- @tanstack/react-query
+- react-router-dom
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## License
+
+- Distributed under the MIT License. See `LICENSE` for more information.
+
+## Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/michaelhunter555/todo-demo-frontend.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd todo-frontend
+   ```
+3. Install the dependencies:
+   ```sh
+   npm install
+   ```
+
+### Environment Variables
+
+- Create a `.env` file in the root of your project and add the following:
+  ```
+  VITE_TODO=http://localhost:5000/api/todo
+  ```
+
+## Contact Information
+
+- Michael Hunter - [@michaelhunter](https://twitter.com/michaelhunter) - michaelhunterbkk@gmail.com
+- FE Project Link: [https://github.com/michaelhunter555/todo-demo-frontend](https://github.com/michaelhunter555/todo-demo-frontend)
+- BE Project Link: [https://github.com/michaelhunter555/todo-demo-backend](https://github.com/michaelhunter555/todo-demo-backend)
